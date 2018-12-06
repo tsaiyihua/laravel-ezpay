@@ -1,0 +1,30 @@
+{
+    "name": "tsaiyihua/laravel-ezpay",
+    "description": "ezpay library for laravel",
+    "type": "library",
+    "keywords": ["payment", "ezpay", "pay2go", "laravel"],
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": "~5.7.0",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yihua Tsai",
+            "email": "tsaiyihua@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TsaiYiHua\\EZPay\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TsaiYiHua\\EZPay\\EZPayServiceProvider"
+            ]
+        }
+    }
+}
