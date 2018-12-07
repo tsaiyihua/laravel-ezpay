@@ -114,10 +114,4 @@ class InvoiceController extends Controller
  - 捐贈碼清冊
    - documents/20181205141501_受捐贈機關或團體捐贈碼清冊.pdf
    - <a href='https://www.einvoice.nat.gov.tw/APMEMBERVAN/XcaOrgPreserveCodeQuery/XcaOrgPreserveCodeQuery' target='_blank'>捐贈碼查詢平台</a>
-   
-## Todo
- - 跨境交易（支付寶）
- - 作廢發票
- - 開立折讓
- - 作廢折讓
- - 查詢發票   
+

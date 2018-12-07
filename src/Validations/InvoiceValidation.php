@@ -53,4 +53,26 @@ class InvoiceValidation
         ]);
         return $validator;
     }
+
+    static public function queryValidator($data)
+    {
+        $validator = Validator::make($data, [
+            'orderId' => 'required|alpha_num|max:20',
+            'amount' => 'required|integer',
+            'SearchType' => 'in:0,1',
+            'invoiceNum' => 'required|max:10',
+            'randomNum' => 'required|max:4',
+            'DisplayFlag' => 'max:1'
+        ]);
+        return $validator;
+    }
+
+    static public function invalidValidator($data)
+    {
+        $validator = Validator::make($data, [
+            'invoiceNum' => 'required|max:10',
+            'reason' => 'required|max:20',
+        ]);
+        return $validator;
+    }
 }
